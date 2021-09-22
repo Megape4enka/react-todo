@@ -1,0 +1,365 @@
+Index: src/assets/img/edit.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/edit.svg b/src/assets/img/edit.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/edit.svg	(date 1596523626000)
+@@ -0,0 +1,3 @@
++<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M0 12.0504V14.5834C0 14.8167 0.183308 15 0.41661 15H2.9496C3.05792 15 3.16624 14.9583 3.24123 14.875L12.34 5.78458L9.21542 2.66001L0.124983 11.7504C0.0416611 11.8338 0 11.9337 0 12.0504ZM14.7563 3.36825C14.8336 3.29116 14.8949 3.1996 14.9367 3.0988C14.9785 2.99801 15 2.88995 15 2.78083C15 2.6717 14.9785 2.56365 14.9367 2.46285C14.8949 2.36205 14.8336 2.27049 14.7563 2.19341L12.8066 0.24367C12.7295 0.166428 12.638 0.105146 12.5372 0.0633343C12.4364 0.021522 12.3283 0 12.2192 0C12.1101 0 12.002 0.021522 11.9012 0.0633343C11.8004 0.105146 11.7088 0.166428 11.6318 0.24367L10.107 1.76846L13.2315 4.89304L14.7563 3.36825V3.36825Z" fill="black"/>
++</svg>
+Index: src/components/List/List.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/List/List.scss b/src/components/List/List.scss
+new file mode 100644
+--- /dev/null	(date 1632327265126)
++++ b/src/components/List/List.scss	(date 1632327265126)
+@@ -0,0 +1,43 @@
++
++.list {
++  margin-bottom: 30px;
++
++  li {
++    display: flex;
++    align-items: center;
++    padding: 10px 12px;
++    cursor: pointer;
++
++    &.active {
++      background-color: #ffffff;
++      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
++      border-radius: 4px;
++    }
++    i {
++      display: inline-flex;
++      margin-right: 8px;
++      svg {
++        path {
++          fill: #7c7c7c;
++        }
++      }
++    }
++    .badge {
++      width: 10px;
++      height: 10px;
++      border-radius: 30px;
++      position: relative;
++      left: 5px;
++
++      &--green {
++        background-color: #42b883;
++      }
++      &--blue {
++        background-color: #64c4ed;
++      }
++      &--pink {
++        background-color: #ffbbcc;
++      }
++    }
++  }
++}
+\ No newline at end of file
+Index: src/assets/img/list.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/list.svg b/src/assets/img/list.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/list.svg	(date 1596523626000)
+@@ -0,0 +1,3 @@
++<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M12.96 8.10001H7.74001C7.24321 8.10001 7.20001 8.50231 7.20001 9.00001C7.20001 9.49771 7.24321 9.90001 7.74001 9.90001H12.96C13.4568 9.90001 13.5 9.49771 13.5 9.00001C13.5 8.50231 13.4568 8.10001 12.96 8.10001V8.10001ZM14.76 12.6H7.74001C7.24321 12.6 7.20001 13.0023 7.20001 13.5C7.20001 13.9977 7.24321 14.4 7.74001 14.4H14.76C15.2568 14.4 15.3 13.9977 15.3 13.5C15.3 13.0023 15.2568 12.6 14.76 12.6ZM7.74001 5.40001H14.76C15.2568 5.40001 15.3 4.99771 15.3 4.50001C15.3 4.00231 15.2568 3.60001 14.76 3.60001H7.74001C7.24321 3.60001 7.20001 4.00231 7.20001 4.50001C7.20001 4.99771 7.24321 5.40001 7.74001 5.40001ZM4.86001 8.10001H3.24001C2.74321 8.10001 2.70001 8.50231 2.70001 9.00001C2.70001 9.49771 2.74321 9.90001 3.24001 9.90001H4.86001C5.35681 9.90001 5.40001 9.49771 5.40001 9.00001C5.40001 8.50231 5.35681 8.10001 4.86001 8.10001ZM4.86001 12.6H3.24001C2.74321 12.6 2.70001 13.0023 2.70001 13.5C2.70001 13.9977 2.74321 14.4 3.24001 14.4H4.86001C5.35681 14.4 5.40001 13.9977 5.40001 13.5C5.40001 13.0023 5.35681 12.6 4.86001 12.6ZM4.86001 3.60001H3.24001C2.74321 3.60001 2.70001 4.00231 2.70001 4.50001C2.70001 4.99771 2.74321 5.40001 3.24001 5.40001H4.86001C5.35681 5.40001 5.40001 4.99771 5.40001 4.50001C5.40001 4.00231 5.35681 3.60001 4.86001 3.60001Z" fill="black"/>
++</svg>
+Index: src/assets/img/add.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/add.svg b/src/assets/img/add.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/add.svg	(date 1596523626000)
+@@ -0,0 +1,4 @@
++<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
++<path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
++</svg>
+Index: src/assets/img/remove.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/remove.svg b/src/assets/img/remove.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/remove.svg	(date 1596523626000)
+@@ -0,0 +1,3 @@
++<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M6.87215 5.5L10.7129 1.65926C10.8952 1.47731 10.9977 1.23039 10.9979 0.972832C10.9982 0.715276 10.8961 0.468178 10.7141 0.285898C10.5321 0.103617 10.2852 0.00108525 10.0277 0.000857792C9.77011 0.000630336 9.52302 0.102726 9.34074 0.284685L5.5 4.12542L1.65926 0.284685C1.47698 0.102404 1.22976 0 0.971974 0C0.714191 0 0.466965 0.102404 0.284685 0.284685C0.102404 0.466965 0 0.714191 0 0.971974C0 1.22976 0.102404 1.47698 0.284685 1.65926L4.12542 5.5L0.284685 9.34074C0.102404 9.52302 0 9.77024 0 10.028C0 10.2858 0.102404 10.533 0.284685 10.7153C0.466965 10.8976 0.714191 11 0.971974 11C1.22976 11 1.47698 10.8976 1.65926 10.7153L5.5 6.87458L9.34074 10.7153C9.52302 10.8976 9.77024 11 10.028 11C10.2858 11 10.533 10.8976 10.7153 10.7153C10.8976 10.533 11 10.2858 11 10.028C11 9.77024 10.8976 9.52302 10.7153 9.34074L6.87215 5.5Z" fill="black"/>
++</svg>
+Index: src/assets/db.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/db.json b/src/assets/db.json
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/db.json	(date 1596523626000)
+@@ -0,0 +1,173 @@
++{
++  "lists": [
++    {
++      "id": 1,
++      "name": "Продажи",
++      "colorId": 5
++    },
++    {
++      "id": 2,
++      "name": "Фронтенд",
++      "colorId": 4
++    },
++    {
++      "id": 3,
++      "name": "Фильмы и сериалы",
++      "colorId": 3
++    },
++    {
++      "id": 4,
++      "name": "Книги",
++      "colorId": 2
++    },
++    {
++      "id": 5,
++      "name": "Личное",
++      "colorId": 1
++    },
++    {
++      "name": "Спорт",
++      "colorId": 3,
++      "id": 6
++    },
++    {
++      "name": "Курс по ReactJS ToDo",
++      "colorId": 7,
++      "id": 7
++    }
++  ],
++  "tasks": [
++    {
++      "id": 1,
++      "listId": 2,
++      "text": "Изучить JavaScript",
++      "completed": true
++    },
++    {
++      "id": 2,
++      "listId": 2,
++      "text": "Изучить паттерны проектирования",
++      "completed": false
++    },
++    {
++      "id": 3,
++      "listId": 2,
++      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)",
++      "completed": true
++    },
++    {
++      "id": 4,
++      "listId": 2,
++      "text": "Redux (redux-observable, redux-saga)",
++      "completed": false
++    },
++    {
++      "listId": 2,
++      "text": "123",
++      "completed": true,
++      "id": 5
++    },
++    {
++      "listId": 1,
++      "text": "test",
++      "completed": false,
++      "id": 6
++    },
++    {
++      "listId": 1,
++      "text": "qweqwe",
++      "completed": false,
++      "id": 7
++    },
++    {
++      "listId": 1,
++      "text": "qweqwe",
++      "completed": true,
++      "id": 8
++    },
++    {
++      "listId": 1,
++      "text": "123",
++      "completed": false,
++      "id": 9
++    },
++    {
++      "listId": 4,
++      "text": "Купить 1984!",
++      "completed": true,
++      "id": 10
++    },
++    {
++      "listId": 2,
++      "text": "222",
++      "completed": true,
++      "id": 12
++    },
++    {
++      "listId": 7,
++      "text": "Сделали сайдбар",
++      "completed": true,
++      "id": 15
++    },
++    {
++      "listId": 7,
++      "text": "Сделали список задач",
++      "completed": true,
++      "id": 16
++    },
++    {
++      "listId": 7,
++      "text": "Сделали удаление и редактирование задач и списков",
++      "completed": true,
++      "id": 17
++    },
++    {
++      "listId": 8,
++      "text": "tttt",
++      "completed": false,
++      "id": 18
++    }
++  ],
++  "colors": [
++    {
++      "id": 1,
++      "hex": "#C9D1D3",
++      "name": "grey"
++    },
++    {
++      "id": 2,
++      "hex": "#42B883",
++      "name": "green"
++    },
++    {
++      "id": 3,
++      "hex": "#64C4ED",
++      "name": "blue"
++    },
++    {
++      "id": 4,
++      "hex": "#FFBBCC",
++      "name": "pink"
++    },
++    {
++      "id": 5,
++      "hex": "#B6E6BD",
++      "name": "lime"
++    },
++    {
++      "id": 6,
++      "hex": "#C355F5",
++      "name": "purple"
++    },
++    {
++      "id": 7,
++      "hex": "#110133",
++      "name": "black"
++    },
++    {
++      "id": 8,
++      "hex": "#FF6464",
++      "name": "red"
++    }
++  ]
++}
+Index: src/assets/img/check.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/check.svg b/src/assets/img/check.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/check.svg	(date 1596523626000)
+@@ -0,0 +1,3 @@
++<svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M9.29999 1.20001L3.79999 6.70001L1.29999 4.20001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
++</svg>
+Index: src/components/List/index.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/List/index.jsx b/src/components/List/index.jsx
+new file mode 100644
+--- /dev/null	(date 1632327170596)
++++ b/src/components/List/index.jsx	(date 1632327170596)
+@@ -0,0 +1,20 @@
++import React from 'react';
++
++import './List.scss'
++
++const List = ({ items }) => {
++    return (
++        <ul className="list">
++            {
++                items.map(item => (
++                    <li className={item.active ? 'active' : ''}>
++                        <i>{item.icon ? item.icon : <i className={`badge badge--${item.color}`}></i>}</i>
++                        <span>{item.name}</span>
++                    </li>
++                ))
++            }
++        </ul>
++    );
++};
++
++export default List;
+\ No newline at end of file
+Index: src/assets/img/close.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/assets/img/close.svg b/src/assets/img/close.svg
+new file mode 100644
+--- /dev/null	(date 1596523626000)
++++ b/src/assets/img/close.svg	(date 1596523626000)
+@@ -0,0 +1,3 @@
++<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path fill-rule="evenodd" clip-rule="evenodd" d="M20.63 10.315C20.63 10.2335 20.6291 10.1523 20.6272 10.0712C20.4972 4.49574 15.9212 0 10.315 0C4.62737 0 0 4.62737 0 10.315C0 15.9721 4.57776 20.5802 10.2234 20.6296C10.2539 20.6299 10.2844 20.63 10.315 20.63C10.3456 20.63 10.3761 20.6299 10.4066 20.6296C16.0522 20.5802 20.63 15.9721 20.63 10.315ZM14.2303 13.1855C14.1879 13.0885 14.1265 13.0009 14.0497 12.928L11.4373 10.315L14.0497 7.70203C14.1922 7.55202 14.2705 7.35226 14.2679 7.14536C14.2652 6.93846 14.1819 6.74077 14.0355 6.59446C13.8892 6.44814 13.6915 6.36477 13.4846 6.36212C13.2777 6.35947 13.078 6.43775 12.928 6.58028L10.315 9.19275L7.70203 6.58028C7.55202 6.43775 7.35226 6.35947 7.14536 6.36212C6.93846 6.36477 6.74077 6.44814 6.59446 6.59446C6.44814 6.74077 6.36477 6.93846 6.36212 7.14536C6.35947 7.35226 6.43775 7.55202 6.58028 7.70203L9.19275 10.315L6.58028 12.928C6.43775 13.078 6.35947 13.2777 6.36212 13.4846C6.36477 13.6915 6.44814 13.8892 6.59446 14.0355C6.74077 14.1819 6.93846 14.2652 7.14536 14.2679C7.35226 14.2705 7.55202 14.1922 7.70203 14.0497L10.315 11.4373L12.928 14.0497C13.0009 14.1265 13.0885 14.1879 13.1855 14.2303C13.2826 14.2727 13.3872 14.2952 13.4931 14.2966C13.599 14.298 13.7041 14.2781 13.8022 14.2382C13.9003 14.1983 13.9894 14.1392 14.0643 14.0643C14.1392 13.9894 14.1983 13.9003 14.2382 13.8022C14.2781 13.7041 14.298 13.599 14.2966 13.4931C14.2953 13.3872 14.2727 13.2826 14.2303 13.1855Z" fill="#5E5E5E"/>
++</svg>
+Index: public/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n    <meta name=\"theme-color\" content=\"#000000\" />\r\n    <meta\r\n      name=\"description\"\r\n      content=\"Web site created using create-react-app\"\r\n    />\r\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\r\n    <!--\r\n      manifest.json provides metadata used when your web app is installed on a\r\n      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\r\n    -->\r\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\r\n    <!--\r\n      Notice the use of %PUBLIC_URL% in the tags above.\r\n      It will be replaced with the URL of the `public` folder during the build.\r\n      Only files inside the `public` folder can be referenced from the HTML.\r\n\r\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\r\n      work correctly both with client-side routing and a non-root public URL.\r\n      Learn how to configure a non-root public URL by running `npm run build`.\r\n    -->\r\n    <title>React App</title>\r\n  </head>\r\n  <body>\r\n    <noscript>You need to enable JavaScript to run this app.</noscript>\r\n    <div id=\"root\"></div>\r\n    <!--\r\n      This HTML file is a template.\r\n      If you open it directly in the browser, you will see an empty page.\r\n\r\n      You can add webfonts, meta tags, or analytics to this file.\r\n      The build step will place the bundled scripts into the <body> tag.\r\n\r\n      To begin the development, run `npm start` or `yarn start`.\r\n      To create a production bundle, use `npm run build` or `yarn build`.\r\n    -->\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/public/index.html b/public/index.html
+--- a/public/index.html	(revision 4d11ebf64f5451f88bc83bdab488020e45887386)
++++ b/public/index.html	(date 1632323155952)
+@@ -24,6 +24,7 @@
+       work correctly both with client-side routing and a non-root public URL.
+       Learn how to configure a non-root public URL by running `npm run build`.
+     -->
++    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+     <title>React App</title>
+   </head>
+   <body>
