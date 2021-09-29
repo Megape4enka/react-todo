@@ -7,3 +7,6 @@ Stack:
   - Axios <br/>
   - classnames <br/>
   - sass
+
+
+The project is not completed.
